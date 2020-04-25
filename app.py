@@ -73,4 +73,4 @@ if __name__ == '__main__':
     #print("Json")
     #print(type(X))
     #application.run()
-    app.run(port=os.getenv('PORT', 8000))
+    app.run()#(port=os.getenv('PORT', 8000))
