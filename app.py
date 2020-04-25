@@ -1,7 +1,7 @@
 
 import json
 import os 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request , render_template
 import torch   #pytorch facebook like Keras library h fo DL and ML
 from torch.utils.data import DataLoader   #data from csv read usko into ptorch form converts
 
@@ -43,7 +43,11 @@ def get_prediction(test_data):
 
             return proposed_class_index[y_pred]
 
-
+@app.route('/')
+def home():
+    
+  return render_template('index.html')
+  
 
 @app.route('/web', methods=['POST'])
 def predict():
