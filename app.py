@@ -102,7 +102,7 @@ def predict():
 
 
 @app.route('/webDoctor', methods=['POST'])
-def predict():
+def predictDoctor():
     if request.method == 'POST':
         #req_data = request.get_json()
 
