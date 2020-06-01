@@ -11,6 +11,7 @@ from torch.utils.data import DataLoader   #data from csv read usko into ptorch f
 
 #Task1
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 proposed_class_index = json.load(open('proposed_class_index.json'))
 
 #model = models.densenet121(pretrained=True)  #####
