@@ -1,1 +1,1 @@
-web: gunicorn --workers=10 --threads=10 app:app --log-level debug 
+web: gunicorn --workers=2 --threads=2 app:app --log-level debug 
